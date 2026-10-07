@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peptio — Peptide &amp; GLP-1 dose tracker</title>
+<meta name="description" content="A private log for GLP-1 medications and peptide stacks. Reminders for every compound, injection-site rotation and progress — no account.">
+<link rel="canonical" href="https://getpeptio.com/">
+<meta name="theme-color" content="#5B4BD6">
+<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getpeptio.com/">
+<meta property="og:title" content="Peptio — Peptide &amp; GLP-1 dose tracker">
+<meta property="og:description" content="A private log for GLP-1 medications and peptide stacks. Reminders for every compound, injection-site rotation and progress — no account.">
+<meta property="og:image" content="https://getpeptio.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Peptio — Peptide &amp; GLP-1 dose tracker">
+<meta name="twitter:description" content="A private log for GLP-1 medications and peptide stacks. Reminders for every compound, injection-site rotation and progress — no account.">
+<meta name="twitter:image" content="https://getpeptio.com/assets/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="apple" viewBox="0 0 24 24"><path d="M16.37 12.73c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.28-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66zM14.1 5.98c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.67-1.09 1.76-.96 2.8 1.02.08 2.05-.52 2.69-1.27z"/></symbol></svg>
+
+<div id="page">
+  <div class="ribbon" id="rib" aria-hidden="true"></div>
+
+  <header class="hero bg-violet" data-ribc="#C9F53A">
+    <nav class="nav" aria-label="Main">
+      <a class="wordmark" href="./">Peptio</a>
+      <div class="links"><a href="#features">Features</a><a href="privacy">Privacy</a><a href="#support">Support</a></div>
+      <a class="cta lime sm js-appstore" href="#support"><svg aria-hidden="true" focusable="false"><use href="#apple"/></svg><span class="cta-t">Free on the App Store</span></a>
+    </nav>
+    <div class="wrap hero-grid">
+      <div class="txt">
+        <h1 class="bri"><span>Stop</span> <span class="lime">guessing</span> <span>what you</span> <span>took<span class="sr-js">.</span><i id="dot" aria-hidden="true"></i></span></h1>
+        <div class="ctaline">
+          <a class="cta lime js-appstore" href="#support"><svg aria-hidden="true" focusable="false"><use href="#apple"/></svg><span class="cta-t">Free on the App Store</span></a>
+          <span class="fine"><span class="dot" aria-hidden="true"></span>Free to start · no account</span>
+        </div>
+      </div>
+      <div class="stage" data-art="hero" data-rib="right" style="--w:600;--h:600"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="sec bg-pl on-light" data-ribc="#7A6AF0" aria-labelledby="h-did">
+      <div class="wrap row wide-txt art-first">
+        <div class="stage" data-art="worry" data-rib="left" style="--w:600;--h:600"></div>
+        <div class="txt">
+          <h2 class="bri" id="h-did"><span>“Did I</span> <span class="vio">take it?”</span> <span>Never again.</span></h2>
+          <p>Next-dose reminders for every compound in your stack.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec bg-violet on-dark" data-ribc="#C9F53A" aria-labelledby="h-dose">
+      <div class="wrap row">
+        <div class="txt">
+          <h2 class="bri" id="h-dose"><span>Every dose.</span> <span class="lime">Every site.</span> <span>Remembered.</span></h2>
+          <p>Log the amount, time and injection site. The body map suggests the site you used least recently.</p>
+        </div>
+        <div class="stage" data-art="log" data-rib="right" style="--w:620;--h:730"></div>
+      </div>
+    </section>
+
+    <section class="sec bg-violet-r on-dark" data-ribc="#C9F53A" aria-labelledby="h-private">
+      <div class="wrap row">
+        <div class="stage" data-art="private" data-rib="left" style="--w:600;--h:580"></div>
+        <div class="txt">
+          <h2 class="bri" id="h-private"><span>Private.</span> <span class="lime">Yours.</span> <span>No account.</span></h2>
+          <ul class="chips"><li class="chip">No account</li><li class="chip">Works offline</li><li class="chip">Stays on your phone</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bsec" id="features" data-ribc="#6A5AE0" aria-labelledby="gridhead">
+      <div class="wrap">
+        <h2 class="bri bhead" id="gridhead">This time, your phone <span class="vio">keeps track for <span class="nowrap">you.<i id="cap" aria-hidden="true"></i></span></span></h2>
+        <div class="bento">
+          <article class="tile t-blue span2">
+            <div class="art"><div class="stage" data-art="remind" style="--w:440;--h:310"></div></div>
+            <div><h3>Reminders</h3><p>A next-dose reminder for every compound in your stack, at the time you set.</p></div>
+          </article>
+          <article class="tile t-lime tall">
+            <div class="art"><div class="stage" data-art="logTile" style="--w:360;--h:540"></div></div>
+            <div><h3>Log a dose</h3><p>Amount, time and injection site, saved in one sheet.</p></div>
+          </article>
+          <article class="tile t-lilac">
+            <div class="art"><div class="stage" data-art="sites" style="--w:360;--h:340"></div></div>
+            <div><h3>Injection sites</h3><p>The body map suggests the site you used least recently.</p></div>
+          </article>
+          <article class="tile t-white">
+            <div class="art"><div class="stage" data-art="stack" style="--w:360;--h:300"></div></div>
+            <div><h3>Your stack</h3><p>A schedule for every compound, with what’s next on each card.</p></div>
+          </article>
+          <article class="tile t-white span2">
+            <div class="art"><div class="stage" data-art="progress" style="--w:470;--h:330"></div></div>
+            <div><h3>Progress</h3><p>Weight trend, doses recorded and symptom entries, week by week.</p></div>
+          </article>
+          <article class="tile t-blue tall">
+            <div class="art"><div class="stage" data-art="journal" style="--w:360;--h:430"></div></div>
+            <div><h3>Journal</h3><p>Everything you log, kept day by day in one timeline.</p></div>
+          </article>
+          <article class="tile t-lime span2">
+            <div class="art"><div class="stage" data-art="privTile" style="--w:400;--h:250"></div></div>
+            <div><h3>Private</h3><p>Your records stay on this iPhone. No account, and it works offline. The only thing shared is optional anonymous usage counts.</p>
+              <ul class="chips"><li class="chip">No account</li><li class="chip">Works offline</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bsec how" aria-labelledby="h-how">
+      <div class="wrap">
+        <h2 class="bri bhead" id="h-how">How it <span class="vio">works</span></h2>
+        <ol class="steps">
+          <li class="step"><div class="stage" data-art="how1" style="--w:300;--h:600"></div><h3>Set up your plan</h3><p>Add each compound in your stack with its dose and schedule.</p></li>
+          <li class="step"><div class="stage" data-art="how2" style="--w:300;--h:600"></div><h3>Follow today</h3><p>Today shows your next dose. Log it with amount, time and site.</p></li>
+          <li class="step"><div class="stage" data-art="how3" style="--w:300;--h:600"></div><h3>See it working, week by week</h3><p>Weight trend, doses recorded and symptom entries over the weeks.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bsec" id="pricing" aria-labelledby="h-pricing">
+      <div class="wrap narrow">
+        <h2 class="bri bhead" id="h-pricing">Pricing</h2>
+        <div class="plans">
+          <div class="plan free">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <p class="note-line">Free to start · no account</p>
+            <ul><li>Up to 3 compounds</li><li>Records stay on this iPhone</li><li>Works offline</li></ul>
+            <a class="cta black js-appstore" href="#support"><svg aria-hidden="true" focusable="false"><use href="#apple"/></svg><span class="cta-t">Free on the App Store</span></a>
+          </div>
+          <div class="plan pro">
+            <span class="badge">7 days free</span>
+            <h3>Pro</h3>
+            <p class="price">$39.99<small>/ year</small></p>
+            <p class="note-line">Starts with a 7-day free trial.</p>
+            <ul><li>Everything in Free</li><li>Every compound in your stack</li></ul>
+            <a class="cta lime js-appstore" href="#support"><svg aria-hidden="true" focusable="false"><use href="#apple"/></svg><span class="cta-t">Free on the App Store</span></a>
+            <div class="alts"><p><b>$6.99</b> / month</p><p><b>$99.99</b> lifetime · one payment, no subscription</p></div>
+          </div>
+        </div>
+
+        <div class="faq-block">
+          <h2 class="bri bhead" id="h-faq">Questions</h2>
+          <div class="faq">
+            <details open><summary>Do I need an account?</summary><p>No. Your records stay on this iPhone.</p></details>
+            <details><summary>Does it work offline?</summary><p>Yes. Everything works without a connection.</p></details>
+            <details><summary>Is it medical advice?</summary><p>No. Peptio is a tracking tool. See the <a href="disclaimer">medical disclaimer</a>.</p></details>
+            <details><summary>What does Free include?</summary><p>Free covers up to 3 compounds.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="support" id="support" aria-labelledby="h-support">
+      <div class="wrap narrow">
+        <h2 class="bri bhead" id="h-support">Need a hand?</h2>
+        <p>Questions, bugs or ideas? Email <a href="mailto:mishkachargazia@gmail.com">mishkachargazia@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <section class="final bg-violet" aria-labelledby="h-final">
+      <div class="wrap">
+        <h2 class="bri" id="h-final">It remembers, so you can <span class="lime">rest.</span></h2>
+        <div class="stage" data-art="cast" style="--w:900;--h:330"></div>
+        <div class="ctaline">
+          <a class="cta lime js-appstore" href="#support"><svg aria-hidden="true" focusable="false"><use href="#apple"/></svg><span class="cta-t">Free on the App Store</span></a>
+          <span class="fine"><span class="dot" aria-hidden="true"></span>Free to start · no account</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="wordmark" href="./">Peptio</a>
+    <nav aria-label="Legal and support">
+      <ul class="foot-links">
+        <li><a href="privacy">Privacy Policy</a></li>
+        <li><a href="disclaimer">Medical disclaimer</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></li>
+      </ul>
+    </nav>
+    <p>Peptio is a tracking tool. It does not give medical advice.</p>
+    <p>© 2026 Peptio</p>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
