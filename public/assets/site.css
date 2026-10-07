@@ -217,6 +217,27 @@ html:not(.js) .final .ctaline{margin-top:48px}
 .foot-links a:hover{color:var(--lime)}
 .foot p{grid-column:2;font-size:15px}
 
+/* ---------- legal pages (privacy, disclaimer) ---------- */
+.nav.on-light{color:var(--ink)}
+.nav.on-light .links a:hover{color:var(--vdeep)}
+.doc-head{background:#F2F0FF}
+.doc-head .doc-head-in{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;max-width:752px;padding:24px 16px 48px}
+.doc-head h1{font-size:clamp(40px,4.5vw,64px);line-height:.95}
+.doc-meta{margin-top:16px;font-size:16px;color:#55586A}
+.doc-art{width:200px}
+@media (min-width:1000px){ .doc-art{margin-right:-180px} }
+.doc{max-width:752px;margin:0 auto;padding:64px 16px 120px;font-size:18px;line-height:1.65;color:var(--ink)}
+.doc h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-variation-settings:"opsz" 96;letter-spacing:-0.02em;font-size:32px;line-height:1.05;margin:56px 0 14px}
+.doc p{margin:0 0 16px}
+.doc strong{font-weight:600}
+.doc a{color:var(--vdeep);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.doc ul{list-style:none;margin:4px 0 22px;display:grid;gap:12px}
+.doc li{position:relative;padding-left:28px}
+.doc li::before{content:"";position:absolute;left:4px;top:.66em;width:8px;height:8px;border-radius:50%;background:var(--vdeep)}
+.doc .card{background:#F4FCDF;border-radius:24px;padding:24px 28px;margin:0 0 8px}
+.doc .card strong{font-weight:700}
+.doc > :first-child{margin-top:0}
+
 /* ---------- 404 ---------- */
 .lost{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;color:#fff}
 .lost main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px 16px 80px}
@@ -229,7 +250,13 @@ html:not(.js) .final .ctaline{margin-top:48px}
   .bento{grid-template-columns:1fr 1fr}
   .tile.span2{grid-column:span 2}
 }
+@media (max-width:600px){ .doc-art{display:none} }
 @media (max-width:760px){
+  .doc-head .doc-head-in{padding:28px 16px 36px}
+  .doc-art{width:140px}
+  .doc{font-size:17px;padding:44px 16px 84px}
+  .doc h2{font-size:28px;margin-top:44px}
+  .doc .card{padding:20px 20px}
   .wrap{padding:0 16px}
   .nav{padding:16px;gap:12px}
   .nav .wordmark{font-size:28px}

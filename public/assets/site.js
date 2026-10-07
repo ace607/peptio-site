@@ -17,8 +17,7 @@ const APP_STORE_URL = '';
     if (APP_STORE_URL) { a.href = APP_STORE_URL; return; }
     const t = a.querySelector('.cta-t');
     if (t) t.textContent = 'Coming soon on the App Store';
-    a.href = '#support';
-    a.classList.add('soon');
+    a.classList.add('soon');   // href stays as written in the HTML: #support on the home page, /#support elsewhere
   });
 
   /* ---------- screens ---------- */
@@ -172,6 +171,8 @@ const APP_STORE_URL = '';
     how2: () => phone({ src: '02-today', sw: 250, x: 16, y: 8, alt: 'Peptio Today screen showing the next dose in 10h 19m' }),
     how3: () => phone({ src: '05-progress', sw: 250, x: 16, y: 8, alt: 'Peptio Progress screen with the weight trend and doses recorded' }),
     sleepy: () => faceTile({ x: 40, y: 80, s: 220, c: 'violet', face: 'sleepy', rot: -10, extra: zz(40, -110, 88) }),
+    docLock: () => clay({ x: 30, y: 24, s: 150, c: 'plum', g: 'lock', rot: 12, ty: 14 }),
+    docVial: () => clay({ x: 30, y: 24, s: 150, c: 'blue', g: 'vial', rot: -12 }),
   };
 
   /* ---------- stages: render when near the viewport, scale to the column ---------- */
